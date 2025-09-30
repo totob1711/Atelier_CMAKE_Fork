@@ -30,7 +30,7 @@ jobs:
           make
           ./src/calculator add 10 5
 
-    Test_Div:
+  Test_Div:
     runs-on: ubuntu-latest
     needs: Compilation
     steps:
@@ -86,7 +86,7 @@ jobs:
           cmake ..
           make
           ./src/calculator carre 10 
-          
+
   Deploy:
     runs-on: ubuntu-latest
     needs:
